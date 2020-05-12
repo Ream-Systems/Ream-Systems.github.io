@@ -10,6 +10,9 @@ $black: #000000;
 $primary: #ffd369;
 $secondary: #2c2f3a;
 
+$gradient1:#31c6e8;
+$gradient2:rgba(49, 232, 159, 1);
+
 
 
 @mixin border-radius($radius) {
@@ -28,14 +31,14 @@ $secondary: #2c2f3a;
 }
 
 @mixin gradient-background(){
-	background: rgba(242,0,255,1);
-	background: -moz-linear-gradient(45deg, rgba(242,0,255,1) 0%, rgba(255,186,66,1) 100%);
-	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(242,0,255,1)), color-stop(100%, rgba(255,186,66,1)));
-	background: -webkit-linear-gradient(45deg, rgba(242,0,255,1) 0%, rgba(255,186,66,1) 100%);
-	background: -o-linear-gradient(45deg, rgba(242,0,255,1) 0%, rgba(255,186,66,1) 100%);
-	background: -ms-linear-gradient(45deg, rgba(242,0,255,1) 0%, rgba(255,186,66,1) 100%);
-	background: linear-gradient(45deg, rgba(242,0,255,1) 0%, rgba(255,186,66,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f200ff', endColorstr='#ffba42', GradientType=1 );
+	background: $gradient1;
+	background: -moz-linear-gradient(45deg, $gradient1 0%, $gradient2 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, $gradient1)), color-stop(100%, $gradient2);
+	background: -webkit-linear-gradient(45deg, $gradient1 0%, $gradient2 100%);
+	background: -o-linear-gradient(45deg, $gradient1 0%, $gradient2 100%);
+	background: -ms-linear-gradient(45deg, $gradient1 0%, $gradient2 100%);
+	background: linear-gradient(45deg, $gradient1 0%, $gradient2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31e6e8', endColorstr='#31e89f', GradientType=1 );
 }
 
 html {
