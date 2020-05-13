@@ -97,7 +97,7 @@ var check = setInterval(function() {
                     var elem = document.createElement('div');
                     elem.classList.add('case');
 
-                    elem.innerHTML = '<div class="row"><div class="col-md-6 col-lg-6 col-xl-8 d-flex"><a href="https://ream.systems.articles#'+ blog.articles[i].title +'" class="img w-100 mb-3 mb-md-0" style="background-image: url(' + blog.path + '/' + blog.articles[i].path + '/' + blog.articles[i].img + ');"></a></div><div class="col-md-6 col-lg-6 col-xl-4 d-flex"><div class="text w-100 pl-md-3"><span class="subheading">' + blog.articles[i].description + '</span><h2><a href="https://ream.systems.articles#'+ blog.articles[i].title +'">'+ blog.articles[i].title + '</a></h2><div class="meta"><p class="mb-0"><a href="#">'+ blog.articles[i].date +'</a></p></div></div></div></div>';
+                    elem.innerHTML = '<div class="row"><div class="col-md-6 col-lg-6 col-xl-8 d-flex"><a href="https://ream.systems/articles#'+ blog.articles[i].title +'" class="img w-100 mb-3 mb-md-0" style="background-image: url(' + blog.path + '/' + blog.articles[i].path + '/' + blog.articles[i].img + ');"></a></div><div class="col-md-6 col-lg-6 col-xl-4 d-flex"><div class="text w-100 pl-md-3"><span class="subheading">' + blog.articles[i].description + '</span><h2><a href="https://ream.systems/articles#'+ blog.articles[i].title +'">'+ blog.articles[i].title + '</a></h2><div class="meta"><p class="mb-0"><a href="#">'+ blog.articles[i].date +'</a></p></div></div></div></div>';
 
                     
                     document.getElementById('blog').appendChild(elem);
