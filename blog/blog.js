@@ -4,12 +4,12 @@ document.body.appendChild(script);
 
 var converter;
 
-
-document.addEventListener('DOMContentLoaded',()=>{
-
-    converter = new showdown.Converter();
-
-});
+var check = setInterval(function() {
+    if (showdown) {
+        converter = new showdown.Converter();
+        clearInterval(check);
+    }
+ }, 100);
 
 function Blog(path) {
     this.path = path;
@@ -93,6 +93,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     console.log(blog.get('example').html);
 
     
-})
+});
 
 
