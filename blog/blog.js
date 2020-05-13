@@ -2,7 +2,6 @@ var script = document.createElement("script");
 script.src = 'https://unpkg.com/showdown/dist/showdown.min.js';  
 document.body.appendChild(script);
 
-
 const converter = new showdown.Converter();
 
 function Blog(path) {
@@ -66,21 +65,27 @@ function convert(text){
 }
 
 
+document.addEventListener('DOMContentLoaded',()=>{
 
-blog = new Blog("https://ream.systems/blog/");
+    blog = new Blog("https://ream.systems/blog/");
 
-var articles = [
-    {
-        title:'example',
-        description:'Example blog post!',
-        date:'13/5/2020',
-        path:'example',
-        img:'images/car.jpg'
-    }
-]
+    var articles = [
+        {
+            title:'example',
+            description:'Example blog post!',
+            date:'13/5/2020',
+            path:'example',
+            img:'images/car.jpg'
+        }
+    ]
 
-articles.forEach(article =>{
-    blog.add(article);
+    articles.forEach(article =>{
+        blog.add(article);
+    })
+
+    console.log(blog.get('example').html);
+
+    
 })
 
-console.log(blog.get('example').html);
+
