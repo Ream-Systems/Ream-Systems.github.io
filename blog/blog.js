@@ -3,7 +3,7 @@ var articles = [
     {
         title:'example',
         date:'13/5/2020',
-        path:'example/example.html'
+        path:'example/example.md'
     }
 ]
 
