@@ -2,7 +2,14 @@ var script = document.createElement("script");
 script.src = 'https://unpkg.com/showdown/dist/showdown.min.js';  
 document.body.appendChild(script);
 
-const converter = new showdown.Converter();
+var converter;
+
+
+document.addEventListener('DOMContentLoaded',()=>{
+
+    converter = new showdown.Converter();
+
+});
 
 function Blog(path) {
     this.path = path;
