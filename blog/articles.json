@@ -1,0 +1,11 @@
+{
+    "articles":[
+        {
+            "title":"Ream Systems Limited!",
+            "description":"Our first blog post.",
+            "date":"13-May-2020",
+            "path":"First Post",
+            "img":"images/startup.jpg"
+        }
+    ]
+}
