@@ -1,16 +1,3 @@
-//add articles here!
-const articles = [
-    {
-        title:'example',
-        description:'Example blog post!',
-        date:'13/5/2020',
-        path:'example',
-        img:'images/car.jpg'
-    }
-]
-
-
-
 
 var script = document.createElement("script");
 script.src = 'https://unpkg.com/showdown/dist/showdown.min.js';  
@@ -25,7 +12,18 @@ function Blog(path) {
 
 Blog.prototype.add = async function(article){
 
-    this.articles.push(article);
+    if(article.html == undefined){
+
+        await fetch(this.path + "/" + article.path + "/" + article.title + ".md")
+        .then(response => {
+            return response.text();
+        }).then(text =>{
+            article.html = convert(text);
+            this.articles.push(article);
+        })
+
+    } else this.articles.push(article);
+
 }
 
 Blog.prototype.indexOf = function(title){
@@ -80,29 +78,29 @@ var check = setInterval(function() {
 
             async function addArticles(){
     
-                for(var i = 0;i<articles.length;i++){
+                var name = window.location.href.split('#')[1];
 
-                    await blog.add(articles[i]);
-                
-                }
+                await blog.add({
+                    title:name,
+                    path:name
+                });
+
+
 
             }
            
             addArticles().then(()=>{
-                
-                for(var i = 0;i<blog.articles.length;i++){
 
-                    console.log('cool');
-                    
-                    var elem = document.createElement('div');
-                    elem.classList.add('case');
+                var titles = document.getElementsByClassName('articleTitle');
 
-                    elem.innerHTML = '<div class="row"><div class="col-md-6 col-lg-6 col-xl-8 d-flex"><a href="https://ream.systems.articles#'+ blog.articles[i].title +'" class="img w-100 mb-3 mb-md-0" style="background-image: url(' + blog.path + '/' + blog.articles[i].path + '/' + blog.articles[i].img + ');"></a></div><div class="col-md-6 col-lg-6 col-xl-4 d-flex"><div class="text w-100 pl-md-3"><span class="subheading">' + blog.articles[i].description + '</span><h2><a href="blog-single.html">'+ blog.articles[i].title + '</a></h2><div class="meta"><p class="mb-0"><a href="#">'+ blog.articles[i].date +'</a></p></div></div></div></div>';
+                console.log(titles);
 
-                    
-                    document.getElementById('blog').appendChild(elem);
-
+                for(var i = 0;i<titles.length;i++){
+                    titles[i].innerHTML = blog.articles[0].title;
                 }
+
+                document.getElementById('article').innerHTML = blog.articles[0].html;
+
             });
            
             clearInterval(check);
