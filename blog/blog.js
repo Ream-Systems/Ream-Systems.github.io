@@ -7,6 +7,8 @@ var articles = [
     }
 ]
 
+read(articles[0].path);
+
 function read(path){
     fetch("https://ream.systems/blog/" + path)
     .then(response => {
