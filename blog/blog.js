@@ -12,11 +12,11 @@ read(articles[0].path);
 function read(path){
     fetch("https://ream.systems/blog/" + path)
     .then(response => {
-        console.log(response.text());
+        convert(response.text());
     });
 }
 
 function convert(text){
-    return converter.makeHtml(text);
+    console.log(converter.makeHtml(text));
 }
 
