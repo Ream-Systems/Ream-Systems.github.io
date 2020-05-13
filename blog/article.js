@@ -85,8 +85,6 @@ var check = setInterval(function() {
                     path:name
                 });
 
-
-
             }
            
             addArticles().then(()=>{
