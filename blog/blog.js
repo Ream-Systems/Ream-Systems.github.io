@@ -6,8 +6,6 @@ fetch('https://ream.systems/blog/articles.json').then((response)=>{
     
     
     const articles = JSON.parse(text).articles;
-
-    console.log(articles);
         
     var script = document.createElement("script");
     script.src = 'https://unpkg.com/showdown/dist/showdown.min.js';  
@@ -89,8 +87,6 @@ fetch('https://ream.systems/blog/articles.json').then((response)=>{
                 addArticles().then(()=>{
                     
                     for(var i = 0;i<blog.articles.length;i++){
-
-                        console.log('cool');
                         
                         var elem = document.createElement('div');
 
