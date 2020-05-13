@@ -5,10 +5,12 @@ document.body.appendChild(script);
 var converter;
 
 var check = setInterval(function() {
-    if (showdown) {
-        converter = new showdown.Converter();
-        clearInterval(check);
-    }
+    try{
+        if (showdown) {
+            converter = new showdown.Converter();
+            clearInterval(check);
+        }
+    } catch(err){}
  }, 100);
 
 function Blog(path) {
