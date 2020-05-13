@@ -8,6 +8,26 @@ var check = setInterval(function() {
     try{
         if (showdown) {
             converter = new showdown.Converter();
+
+            blog = new Blog("https://ream.systems/blog/");
+
+            var articles = [
+                {
+                    title:'example',
+                    description:'Example blog post!',
+                    date:'13/5/2020',
+                    path:'example',
+                    img:'images/car.jpg'
+                }
+            ]
+
+            articles.forEach(article =>{
+                blog.add(article);
+            })
+
+            console.log(blog.get('example').html);
+
+
             clearInterval(check);
         }
     } catch(err){}
@@ -72,29 +92,3 @@ Blog.prototype.remove = function(title){
 function convert(text){
     return converter.makeHtml(text);
 }
-
-
-document.addEventListener('DOMContentLoaded',()=>{
-
-    blog = new Blog("https://ream.systems/blog/");
-
-    var articles = [
-        {
-            title:'example',
-            description:'Example blog post!',
-            date:'13/5/2020',
-            path:'example',
-            img:'images/car.jpg'
-        }
-    ]
-
-    articles.forEach(article =>{
-        blog.add(article);
-    })
-
-    console.log(blog.get('example').html);
-
-    
-});
-
-
