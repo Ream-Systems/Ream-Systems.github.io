@@ -25,7 +25,7 @@ var check = setInterval(function() {
                 blog.add(article);
             })
 
-            console.log(blog.get('example').html);
+            console.log(blog.get('example'));
 
 
             clearInterval(check);
