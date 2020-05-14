@@ -1,8 +1,8 @@
 {
     "articles":[
         {
-            "title":"Ream Systems Limited!",
-            "description":"This is just a test post, please check back soon..",
+            "title":"Ream Systems Limited",
+            "description":"A new startup; for developers, by developers.",
             "date":"14-May-2020",
             "path":"first_post",
             "img":"images/logo.png"
