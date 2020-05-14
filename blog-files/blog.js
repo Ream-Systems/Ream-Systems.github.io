@@ -114,6 +114,9 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
                                 titles[i].innerHTML = blog.articles[match].title;
                             }
         
+
+                            console.log(blog.articles[match]);
+                            
                             document.getElementById('article').innerHTML = blog.articles[match].html;
 
                         } else {
