@@ -113,25 +113,19 @@ fetch('https://ream.systems/blog/articles.json').then((response)=>{
                             if(blog.articles[i].title == url) match = i;
                         }
 
-                        console.log(match);
-                        console.log(url);
 
                         if(match != -1){
-
-                            console.log('it worked')
 
                             for(var i = 0;i<titles.length;i++){
                                 titles[i].innerHTML = blog.articles[match].title;
                             }
         
 
-                            console.log(blog.articles[match]);
-
                             document.getElementById('article').innerHTML = blog.articles[match].html;
 
                         } else {
 
-                            console.log('missing article')
+                            
 
                             for(var i = 0;i<titles.length;i++){
                                 titles[i].innerHTML = 'error';
