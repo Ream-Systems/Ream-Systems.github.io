@@ -106,15 +106,15 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
                         console.log(match);
                         console.log(url);
 
-                        if(match){
+                        if(match != false){
 
                             console.log('it worked')
 
                             for(var i = 0;i<titles.length;i++){
-                                titles[i].innerHTML = blog.articles[0].title;
+                                titles[i].innerHTML = blog.articles[match].title;
                             }
         
-                            document.getElementById('article').innerHTML = blog.articles[0].html;
+                            document.getElementById('article').innerHTML = blog.articles[match].html;
 
                         } else {
 
