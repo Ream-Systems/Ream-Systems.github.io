@@ -97,7 +97,7 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
                         url.splice(0, 1);
                         url = url.join('').split('%20').join(' ');
 
-                        var match = false;
+                        var match = -1;
 
                         for(var i = 0;i<blog.articles.length;i++){
                             if(blog.articles[i].title == url) match = i;
@@ -106,7 +106,7 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
                         console.log(match);
                         console.log(url);
 
-                        if(match !== false){
+                        if(match != -1){
 
                             console.log('it worked')
 
