@@ -1,6 +1,6 @@
 
 
-fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
+fetch('https://ream.systems/blog/articles.json').then((response)=>{
     return response.text();
 }).then(text =>{
     
