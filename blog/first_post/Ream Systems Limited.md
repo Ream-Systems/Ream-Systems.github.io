@@ -44,7 +44,7 @@ If you are looking for a way to add to your CV, work on some interesting project
 
 We are looking to contract these developers on a project by project basis. Each project you will earn a negotiable percentage of the profits, with the option for Ream to buy back these rights at a later date (again at a negotiable price). <br>
 
-We also intend to hire these developers full time when the company starts to have a sustainable cashflow. If you are interested, see our contact section above! <br><br>
+We also intend to hire these developers full-time when the company starts to have a sustainable cashflow. If you are interested, see our contact section above! <br><br>
 
 
 ### Thanks for reading, make sure to come back here for future updates! ###
