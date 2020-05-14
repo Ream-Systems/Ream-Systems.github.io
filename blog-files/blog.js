@@ -160,7 +160,7 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
     
                                 elem.classList.add('col-md-4');
                                 elem.classList.add('d-flex');
-                                elem.classList.add('ftco-animate');
+                                //elem.classList.add('ftco-animate');
                                 elem.innerHTML = '<div class="blog-entry justify-content-end"><a href="https://ream.systems/articles#'+ blog.articles[i].title + '" class="block-20" style="background-image: url(' + blog.path + '/' + blog.articles[i].path + '/' + blog.articles[i].img + ');"></a><div class="text p-4 float-right d-block"><div class="topper d-flex align-items-center"><div class="one py-2 pl-3 pr-1 align-self-stretch"><span class="day">'+ blog.articles[i].date.split('-')[0] + '</span></div><div class="two pl-0 pr-3 py-2 align-self-stretch"><span class="yr">' + blog.articles[i].date.split('-')[2] + '</span> <span class="mos">' + blog.articles[i].date.split('-')[1] + '</span></div></div><h3 class="heading mb-3"><a href="https://ream.systems/articles#'+ blog.articles[i].title + '">'+ blog.articles[i].title +'</a></h3><p>'+ blog.articles[i].description+'</p><p><a href="https://ream.systems/articles#'+ blog.articles[i].title + '" class="btn-custom"><span class="ion-ios-arrow-round-forward mr-3"></span>Read more</a></p></div></div>';
     
                             }
