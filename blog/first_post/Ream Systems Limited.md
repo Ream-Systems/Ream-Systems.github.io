@@ -33,8 +33,7 @@ _Moving onto more lucrative projects_
 2. We will approach Games Workshop a leading hobby manufacturer in the UK (The company that makes Warhammer) with a product to modernize and increase the online sales of their rule books. <br><br>
 
 3. We will be continue continuing development of our political data analysis/information app. We will inform any prospective employees further after they have signed a confidentiality agreement, but, to give perspective: We have had meetings with a few different parties in scotland, and all seem interested if this project proved to be sucessful. This product can aswell be expanded out, not just to Scotland or UK as a whole, but can be expanded to any government with a lot of online data available. 
-
-This project, if successful, will be a hugely profitable - and dont worry we intend to stay well clear of the likes of Cambridge Analyitica! <br> <br>
+This project, if successful, may be hugely profitable - and dont worry we intend to stay well clear of the likes of Cambridge Analyitica! <br> <br>
 
 
 ### We are hiring ###
