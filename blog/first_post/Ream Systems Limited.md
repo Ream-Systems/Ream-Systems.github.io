@@ -13,10 +13,10 @@ Going into this we want to be as transparent as possible, which is why we will b
 ### Our Goals ###
 
 •  We want to encourage a working relationship between us and our community. <br>
-•  We want to provide cheap and simple to use node or deno hosting for looking to start their own projects. <br>
+•  We want to provide cheap and simple to use node and deno hosting for people looking to start their own projects. <br>
 •  We want to foster a network of connections and suport for developers throughout Scotland and the UK at large. <br>
-•  We want to start a program for developers of all age groups or skill sets, as a way to lift up those who need help getting into the field. <br>
-•  We want to partner with existing companies across Scotland to put them in contact with new developers; taylored with skills and experience that they need. <br><br>
+•  We want to start a program for developers of all age groups and skill sets, as a way to lift up those who need help getting into the field. <br>
+•  We want to partner with existing companies across Scotland to put them in contact with new developers; taylored to the skills and experience that they need. <br><br>
 
 
 ### Our plans for the near future ###
@@ -28,7 +28,7 @@ The API will alow them to push, update, remove, start and stop node apps directl
 The percentage of server's resources used will be calculated on our end and the developer will be charged based on the power consumption at a no markup for small projects.
 Modules for this project and development can be seen over at the company Github: https://github.com/Ream-Systems <br>
 
-_Moving onto more lucrative projects_
+_Moving onto more lucrative projects_ <br>
 
 2. We will approach Games Workshop a leading hobby manufacturer in the UK (The company that makes Warhammer) with a product to modernize and increase the online sales of their rule books. <br><br>
 
