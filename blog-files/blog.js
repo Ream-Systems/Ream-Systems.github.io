@@ -85,28 +85,82 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
                 }
             
                 addArticles().then(()=>{
-                    
-                    for(var i = 0;i<blog.articles.length;i++){
-                        
-                        var elem = document.createElement('div');
 
-                        if(!window.location.href.includes('blog')){
+                    //individual article
+                    if(window.location.href.includes('articles')){
 
-                            elem.classList.add('case');
-                            elem.innerHTML = '<div class="row"><div class="col-md-6 col-lg-6 col-xl-8 d-flex"><a href="https://ream.systems/articles#'+ blog.articles[i].title +'" class="img w-100 mb-3 mb-md-0" style="background-image: url(' + blog.path + '/' + blog.articles[i].path + '/' + blog.articles[i].img + ');"></a></div><div class="col-md-6 col-lg-6 col-xl-4 d-flex"><div class="text w-100 pl-md-3"><span class="subheading">' + blog.articles[i].description + '</span><h2><a href="https://ream.systems/articles#'+ blog.articles[i].title +'">'+ blog.articles[i].title + '</a></h2><div class="meta"><p class="mb-0"><a>'+ blog.articles[i].date +'</a></p></div></div></div></div>';    
+
+                        var url = window.location.href.split('#');
+                        var titles = document.getElementsByClassName('articleTitle');
+
+                        //remove url before the first #
+                        url.splice(0, 1);
+                        url = url.join('').replace('%20'," ");
+
+                        var match = false;
+
+                        for(var i = 0;i<blog.articles.length;i++){
+                            if(blog.articles[i].title == url) match = i;
+                        }
+
+                        console.log(match);
+                        console.log(url);
+
+                        if(match){
+
+                            console.log('it worked')
+
+                            for(var i = 0;i<titles.length;i++){
+                                titles[i].innerHTML = blog.articles[0].title;
+                            }
+        
+                            document.getElementById('article').innerHTML = blog.articles[0].html;
 
                         } else {
 
-                            elem.classList.add('col-md-4');
-                            elem.classList.add('d-flex');
-                            elem.classList.add('ftco-animate');
-                            elem.innerHTML = '<div class="blog-entry justify-content-end"><a href="https://ream.systems/articles#'+ blog.articles[i].title + '" class="block-20" style="background-image: url(' + blog.path + '/' + blog.articles[i].path + '/' + blog.articles[i].img + ');"></a><div class="text p-4 float-right d-block"><div class="topper d-flex align-items-center"><div class="one py-2 pl-3 pr-1 align-self-stretch"><span class="day">'+ blog.articles[i].date.split('-')[0] + '</span></div><div class="two pl-0 pr-3 py-2 align-self-stretch"><span class="yr">' + blog.articles[i].date.split('-')[2] + '</span> <span class="mos">' + blog.articles[i].date.split('-')[1] + '</span></div></div><h3 class="heading mb-3"><a href="https://ream.systems/articles#'+ blog.articles[i].title + '">'+ blog.articles[i].title +'</a></h3><p>'+ blog.articles[i].description+'</p><p><a href="https://ream.systems/articles#'+ blog.articles[i].title + '" class="btn-custom"><span class="ion-ios-arrow-round-forward mr-3"></span>Read more</a></p></div></div>';
+                            console.log('article err')
+
+                            for(var i = 0;i<titles.length;i++){
+                                titles[i].innerHTML = 'error';
+                            }
+        
+                            document.getElementById('article').innerHTML = '<h2>Something went wrong, sorry!</h2>';
 
                         }
+
+
+
+                    } else {
+
+                        for(var i = 0;i<blog.articles.length;i++){
                         
-                        document.getElementById('blog').appendChild(elem);
+                            var elem = document.createElement('div');
+    
+                            //index
+                            if(!window.location.href.includes('blog')){
+    
+                                elem.classList.add('case');
+                                elem.innerHTML = '<div class="row"><div class="col-md-6 col-lg-6 col-xl-8 d-flex"><a href="https://ream.systems/articles#'+ blog.articles[i].title +'" class="img w-100 mb-3 mb-md-0" style="background-image: url(' + blog.path + '/' + blog.articles[i].path + '/' + blog.articles[i].img + ');"></a></div><div class="col-md-6 col-lg-6 col-xl-4 d-flex"><div class="text w-100 pl-md-3"><span class="subheading">' + blog.articles[i].description + '</span><h2><a href="https://ream.systems/articles#'+ blog.articles[i].title +'">'+ blog.articles[i].title + '</a></h2><div class="meta"><p class="mb-0"><a>'+ blog.articles[i].date +'</a></p></div></div></div></div>';    
+    
+                            //blog
+                            } else {
+    
+                                elem.classList.add('col-md-4');
+                                elem.classList.add('d-flex');
+                                elem.classList.add('ftco-animate');
+                                elem.innerHTML = '<div class="blog-entry justify-content-end"><a href="https://ream.systems/articles#'+ blog.articles[i].title + '" class="block-20" style="background-image: url(' + blog.path + '/' + blog.articles[i].path + '/' + blog.articles[i].img + ');"></a><div class="text p-4 float-right d-block"><div class="topper d-flex align-items-center"><div class="one py-2 pl-3 pr-1 align-self-stretch"><span class="day">'+ blog.articles[i].date.split('-')[0] + '</span></div><div class="two pl-0 pr-3 py-2 align-self-stretch"><span class="yr">' + blog.articles[i].date.split('-')[2] + '</span> <span class="mos">' + blog.articles[i].date.split('-')[1] + '</span></div></div><h3 class="heading mb-3"><a href="https://ream.systems/articles#'+ blog.articles[i].title + '">'+ blog.articles[i].title +'</a></h3><p>'+ blog.articles[i].description+'</p><p><a href="https://ream.systems/articles#'+ blog.articles[i].title + '" class="btn-custom"><span class="ion-ios-arrow-round-forward mr-3"></span>Read more</a></p></div></div>';
+    
+                            }
+                            
+                            document.getElementById('blog').appendChild(elem);
+    
+                        }
 
                     }
+
+                   
+                    
+                    
                 });
             
                 clearInterval(check);
