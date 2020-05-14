@@ -8,9 +8,9 @@ Going into this we want to be as transparent as possible; which is why we will b
 
 ![Image of an office space](https://ream.systems/blog/first_post/images/logo.png)
 
-<br><br>
+<br>
 
-### Our Goals. ###
+### Our Goals ###
 
 <br>•We want to encourage a working relationship between us and our community. <br>
 •We want to provide cheap and simple to use node or deno hosting for looking to start their own projects. <br>
@@ -19,5 +19,5 @@ Going into this we want to be as transparent as possible; which is why we will b
 •We want to partner with existing companies across Scotland to put them in contact with new developers; taylored with skills and experience that they need. <br><br>
 
 
-### Our plans for the near future. ###
+### Our plans for the near future ###
 <br> The developer program will be discussed in more detail at a later date olong the rest of our planned projects, but for now here are the three main projects planned:<br>
