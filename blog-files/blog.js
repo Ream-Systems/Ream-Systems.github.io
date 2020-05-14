@@ -20,7 +20,17 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
 
     Blog.prototype.add = async function(article){
 
-        this.articles.push(article);
+        if(article.html == undefined && window.location.href.includes('articles')){
+
+            await fetch(this.path + "/" + article.path + "/" + article.title + ".md")
+            .then(response => {
+                return response.text();
+            }).then(text =>{
+                article.html = convert(text);
+                this.articles.push(article);
+            })
+
+        } else this.articles.push(article);
 
     }
 
@@ -116,7 +126,7 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
         
 
                             console.log(blog.articles[match]);
-                            
+
                             document.getElementById('article').innerHTML = blog.articles[match].html;
 
                         } else {
