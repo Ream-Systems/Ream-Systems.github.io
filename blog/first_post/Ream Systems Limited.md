@@ -22,11 +22,9 @@ Going into this we want to be as transparent as possible, which is why we will b
 ### Our plans for the near future ###
 The developer program will be discussed in more detail at a later date along the rest of our planned projects, but for now here are the three main projects planned:<br>
 
-1. Setting up the company server with an API that lets developers use server resources to run node/deno apps in a secure environment.
-
+1. Setting up the company server with an API that lets developers use server resources to run node/deno apps in a secure environment. 
 Developers will be able to use our command line tools, desktop client rontend website or directly interface with our API through another method.
 The API will alow them to push, update, remove, start and stop node apps directly to the server in a safe sandboxed environment. 
-
 The percentage of server's resources used will be calculated on our end and the developer will be charged based on the power consumption at a no markup for small projects.
 Modules for this project and development can be seen over at the company Github: https://github.com/Ream-Systems <br>
 
