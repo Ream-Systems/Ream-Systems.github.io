@@ -74,7 +74,7 @@ var check = setInterval(function() {
         if (showdown) {
             converter = new showdown.Converter();
 
-            blog = new Blog("https://ream.systems/blog");
+            blog = new Blog("https://ream.systems/blog-files");
 
             async function addArticles(){
     
