@@ -6,7 +6,7 @@
 Going into this we want to be as transparent as possible; which is why we will be updating this blog every step of the way. <br><br>
 
 
-![Image of an office space](https://ream.systems/blog/first_post/images/startupt.jpg)
+![Image of an office space](https://ream.systems/blog/first_post/images/startup.jpg)
 
 ### Our Goals. ###
 
