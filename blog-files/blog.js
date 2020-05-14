@@ -106,7 +106,7 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
                         console.log(match);
                         console.log(url);
 
-                        if(match != false){
+                        if(match !== false){
 
                             console.log('it worked')
 
