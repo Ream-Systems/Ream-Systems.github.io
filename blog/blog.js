@@ -82,7 +82,7 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
             if (showdown) {
                 converter = new showdown.Converter();
 
-                blog = new Blog("https://ream.systems/blog-files");
+                blog = new Blog("https://ream.systems/blog");
 
                 async function addArticles(){
         
