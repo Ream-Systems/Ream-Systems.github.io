@@ -95,7 +95,7 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
 
                         //remove url before the first #
                         url.splice(0, 1);
-                        url = url.join('').split('%20').join('');
+                        url = url.join('').split('%20').join(' ');
 
                         var match = false;
 
