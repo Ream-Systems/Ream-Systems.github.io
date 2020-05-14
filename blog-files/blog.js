@@ -95,7 +95,7 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
 
                         //remove url before the first #
                         url.splice(0, 1);
-                        url = url.join('').replace('%20'," ");
+                        url = url.join('').split('%20').join('');
 
                         var match = false;
 
@@ -118,7 +118,7 @@ fetch('https://ream.systems/blog-files/articles.json').then((response)=>{
 
                         } else {
 
-                            console.log('article err')
+                            console.log('missing article')
 
                             for(var i = 0;i<titles.length;i++){
                                 titles[i].innerHTML = 'error';
