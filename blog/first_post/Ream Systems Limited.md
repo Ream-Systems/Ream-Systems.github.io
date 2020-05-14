@@ -2,8 +2,8 @@
 
 ### A new startup: for developers, by developers! ###
 
-<br> It has been our dream for a long time to make the move to being a fully fledged company, we have now made that dream a reality.<br>
-Going into this we want to be as transparent as possible; which is why we will be updating this blog every step of the way. <br><br>
+<br> It has been our dream for a long time to make the move to being a fully fledged company; we have now made that dream a reality.<br>
+Going into this we want to be as transparent as possible, which is why we will be updating this blog every step of the way. <br><br>
 
 
 ![Image of an office space](https://ream.systems/blog/first_post/images/logo.png)
