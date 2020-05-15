@@ -7485,6 +7485,9 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: auto;
   margin-right: auto; }
 
+.navbar {
+  background-color: #fff !important; }
+
 h2 .articleTitle {
   font-size: 50px;
   line-height: 50px;
