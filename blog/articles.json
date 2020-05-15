@@ -6,6 +6,13 @@
             "date":"14-May-2020",
             "path":"first_post",
             "img":"images/logo.png"
+        },
+        {
+            "title":"Our Developer Program",
+            "description":"Cheap hosting and great employment opportunities.",
+            "date":"15-May-2020",
+            "path":"dev_program_1",
+            "img":"images/startup.jpg"
         }
     ]
 }

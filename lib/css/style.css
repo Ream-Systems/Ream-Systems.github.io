@@ -7477,7 +7477,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+#article img {
+  max-width: 100%;
+  height: auto; }
+
 body {
+  max-width: 100vw;
   font-family: "Poppins", Arial, sans-serif;
   background: #fff;
   font-size: 16px;

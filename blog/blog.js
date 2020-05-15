@@ -121,7 +121,8 @@ fetch('https://ream.systems/blog/articles.json').then((response)=>{
                             }
         
 
-                            document.getElementById('article').innerHTML = blog.articles[match].html;
+                            var post = document.getElementById('article').innerHTML = blog.articles[match].html;
+                            
 
                         } else {
 

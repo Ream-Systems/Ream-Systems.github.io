@@ -41,10 +41,18 @@ $gradient2:rgba(49, 232, 159, 1);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31e6e8', endColorstr='#31e89f', GradientType=1 );
 }
 
+#article{
+    img{
+        max-width: 100%;
+        height:auto;
+    }
+}
+
 html {
 	// overflow-x: hidden;
 }
 body {
+    max-width: 100vw;
 	font-family: $font-primary;
 	background: $white;
 	font-size: 16px;
