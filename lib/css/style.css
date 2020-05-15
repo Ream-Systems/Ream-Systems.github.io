@@ -7485,14 +7485,14 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: auto;
   margin-right: auto; }
 
-.articleTitle {
+h2 .articleTitle {
   font-size: 50px;
   line-height: 50px;
   font-weight: 700 !important;
   color: #fff;
   max-width: 100%; }
   @media only screen and (min-width: 601px) {
-    .articleTitle {
+    h2 .articleTitle {
       font-size: 70px;
       line-height: 70px; } }
 

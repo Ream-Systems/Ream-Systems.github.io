@@ -52,18 +52,22 @@ $gradient2:rgba(49, 232, 159, 1);
     }
 }
 
-.articleTitle{
-    font-size: 50px; 
-    line-height: 50px; 
-    font-weight: 700 !important;
-    color:#fff;
-    max-width: 100%;
-
-    @media only screen and (min-width : 601px) {
-        font-size: 70px; 
-        line-height: 70px; 
-	}
+h2{
+    .articleTitle{
+        font-size: 50px; 
+        line-height: 50px; 
+        font-weight: 700 !important;
+        color:#fff;
+        max-width: 100%;
+    
+        @media only screen and (min-width : 601px) {
+            font-size: 70px; 
+            line-height: 70px; 
+        }
+    }
 }
+
+
 
 html {
 	// overflow-x: hidden;
