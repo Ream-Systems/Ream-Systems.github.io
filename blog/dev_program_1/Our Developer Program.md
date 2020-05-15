@@ -29,5 +29,6 @@ We also plan to create a website that (as mentioned in the intro) allows compani
 
 We want to represent our community. We will happily contact any company that you wish to apply for in an official capacity and advertise you as an idividual. Not only will this benefit you as a way to impress and intrigue any potential employer, but it will help us spread our network of connections further afield in the world at large. <br><br>
 
+And just to cover all bases, this will be a completley free service to use and advertise yourself on.<br>
 
 ### If you are interested, please get in touch! We would love to hear from you!###
