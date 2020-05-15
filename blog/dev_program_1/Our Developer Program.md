@@ -4,7 +4,7 @@
 
 <br> The idea of the developer program is to set up a network of connections between developers across Scotland. <br>
 
-It will give companies a way to seach for talented, up-and-coming developers who have the perfect skillset that they need; it will provide the links required to gather together teams of like-minded people; and it will give you the oportunity to get your foot in the door at the companies or startups that you dream of working for!<br><br><br>
+It will give companies a way to seach for talented, up-and-coming developers who have the perfect skillset that they need; it will provide the links required to gather together teams of like-minded people; and it will give you the opportunity to get your foot in the door at the companies or startups that you dream of working for!<br><br><br>
 
 
 ![Image of an office space](https://ream.systems/blog/dev_program_1/images/startup.jpg)
@@ -13,10 +13,10 @@ It will give companies a way to seach for talented, up-and-coming developers who
 
 ### Node and Deno hosting ###
 
-As discussed in our previous blog post, as part of our developer program we plan to provide an easy-to-use api for you to host your own Node or Deno projects.
+As discussed in our previous blog post, as part of our developer program we plan to provide an easy-to-use API for you to host your own Node or Deno projects.
 You will only be paying for the resources you actually use. At the end of each month we will tally up the percentage resource usage of your projects per day. We will only charge you for the cost of the electricity used to run our servers, plus a small percent to run our internet connection, at a very minimal markup. <br><br>
 
-We will give you a variety of ways of interacting with our node hosting api, allowing you to push and run your projects directly to our systems, in a safe sandboxed enviroment. This includes: a command line tool, a website that has a console for you to use, a desktop app or any other way you want to interact with our api! <br><br>
+We will give you a variety of ways of interacting with our node hosting API, allowing you to push and run your projects directly to our systems, in a safe sandboxed enviroment. This includes: a command line tool, a website that has a console for you to use, a desktop app or any other way you want to interact with our API! <br><br>
 
 Why are we doing this? We know how irritating and expensive it is to use third-party hosting services, and we want to make it as simple and as flexible as possible. We are going to be running our servers, regardless of whether they will be used to their full capacity. This way we can offset the costs of running our servers, and give you a cheap and easy way to host your projects. It benefits everyone! <br><br>
 
