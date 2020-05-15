@@ -11,7 +11,7 @@ It will give companies a way to seach for talented, up-and-coming developers who
 
 <br><br>
 
-### Node and Deno hosting! ###
+### Node and Deno hosting ###
 
 As discussed in our previous blog post, as part of our developer program we plan to provide an easy-to-use api for you to host your own Node or Deno projects.
 You will only be paying for the resources you actually use. At the end of each month we will tally up the percentage resource usage of your projects per day. We will only charge you for the cost of the electricity used to run our servers, plus a small percent to run our internet connection, at a very minimal markup. <br><br>
