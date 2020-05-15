@@ -1,6 +1,6 @@
 # Ream Developer Program #
 
-### What is it and why you should you care? ###
+### What is it and why should you care? ###
 
 <br> The idea of the developer program is to set up a network of connections between developers across Scotland. <br>
 
