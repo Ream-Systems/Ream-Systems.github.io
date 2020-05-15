@@ -7479,7 +7479,10 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 #article img {
   max-width: 60%;
-  height: auto; }
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 body {
   max-width: 100vw;
