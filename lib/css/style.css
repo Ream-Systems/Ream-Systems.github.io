@@ -7478,12 +7478,15 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 #article img {
-  max-width: 80%;
+  max-width: 95%;
   max-height: 700px;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto; }
+  @media only screen and (min-width: 601px) {
+    #article img {
+      max-width: 80%; } }
 
 h2 .articleTitle {
   font-size: 50px;
