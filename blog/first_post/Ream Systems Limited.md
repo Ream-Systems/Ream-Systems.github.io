@@ -30,9 +30,7 @@ Modules for this project and development can be seen over at the company Github:
 
 _Moving onto more lucrative projects_ <br>
 
-2. We will approach a leading hobby manufacturer with a product to modernize and increase the online sales of their rule books. <br><br>
-
-3. We will continue development of our political data analysis/information app. We will inform any prospective employees further after they have signed a confidentiality agreement, but, to give perspective: We have had meetings with a few different parties in Scotland, and all seem interested if this project proved to be successful. This product be expanded out as well, not just to Scotland or UK as a whole, but to any government with online data available. 
+2. We will continue development of our political data analysis/information app. We will inform any prospective employees further after they have signed a confidentiality agreement, but, to give perspective: We have had meetings with a few different parties in Scotland, and all seem interested if this project proved to be successful. This product be expanded out as well, not just to Scotland or UK as a whole, but to any government with online data available. 
 This project, if successful, may be hugely profitable - and dont worry we intend to stay well clear of the likes of Cambridge Analyitica! <br> <br>
 
 
